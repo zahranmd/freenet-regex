@@ -136,5 +136,6 @@ If you are missing a feature or have a new idea, go for it! That is what open-so
 
 Authors:
 
-Zahra Niroumand (@zahranmd)
+Zahra Niroumand <a href="https://github.com/zahranmd">@zahranmd</a>
+
 Morita Tarverdians (@mtarverdians)
