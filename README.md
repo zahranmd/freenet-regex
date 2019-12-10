@@ -27,6 +27,7 @@ These are three mostly used keys in Freenet:
 
 •	USK - Updatable Subspace Keys
 
+
 Content Hash Keys (CHK):
 
 Content Hash Keys(CHKs) are for files with static content, like an .mp3 or a PDF-document. These keys are hashes of the content of the file. A hash is a reproducible method of turning a specific piece of data into a relatively small number that serve as a sort of fingerprint for the data. If the file content changes, even ever so little, the hash of the file changes radically. A CHK uniquely identifies a file, it should not be possible for two files with different content to have the same CHK. The CHK consists of three parts:
@@ -41,7 +42,7 @@ So, a typical CHK key looks like this:
 	CHK @ file hash, decryption key, crypto settings
 For example:
 
-localhost:8888/freenet:CHK@MBkDVZUDgjVN4Hrjtj8u2~KBtAXGzJGte99CRhA-TZU,q4dp0VskEeY9lC1OHJTq-~TDX32q37oOX8BpvDMWrdQ,AAIC--8/Zeh.Arrow of time%28draft%29%28230s%29.pdf
+http://localhost:8888/freenet:CHK@MBkDVZUDgjVN4Hrjtj8u2~KBtAXGzJGte99CRhA-TZU,q4dp0VskEeY9lC1OHJTq-~TDX32q37oOX8BpvDMWrdQ,AAIC--8/Zeh.Arrow of time%28draft%29%28230s%29.pdf
 
 In the example, the above mentioned parts of CHK are: 
 
@@ -54,12 +55,14 @@ In the example, the above mentioned parts of CHK are:
 •	Arrow of time %28draft%29%28230s%29.pdf, file name 
 
 
+
 Signed Subspace Keys (SSKs):
 
 Signed Subspace Keys (SSKs) are usually for sites that are going to change over time. For example, a website that may need news to be updated or information to be corrected, added or deleted. They work in such a way that someone else can't put up a newer version of your site and pretend it was you who did it. It works by using public-key cryptography so you automatically sign your site. Only the person with the secret key can add updated versions of your site to Freenet.
+
 Here's an example of an address of a real SSK site in Freenet:
 
-localhost:8888/freenet:SSK@spOnEa2YvAoNfreZPfoy0tVNCzQghLdWaaNM10GEiEM,QRKjyaBkOX5Qw~aEml19WIDaJJo2X3hU9mGz8GcUuKc,AQACAAE/freesite_es-1
+http://localhost:8888/freenet:SSK@spOnEa2YvAoNfreZPfoy0tVNCzQghLdWaaNM10GEiEM,QRKjyaBkOX5Qw~aEml19WIDaJJo2X3hU9mGz8GcUuKc,AQACAAE/freesite_es-1
 
 •	spOnEa2YvAoNfreZPfoy0tVNCzQghLdWaaNM10GEiEM, is the hash of the public key. This part is all that is required to uniquely identify the file.
 
@@ -68,6 +71,7 @@ localhost:8888/freenet:SSK@spOnEa2YvAoNfreZPfoy0tVNCzQghLdWaaNM10GEiEM,QRKjyaBkO
 •	AQACAAE is the encryption settings
 
 •	freesite_es-1, is a word chosen by the site creator, and the 1 is the version of the site. The version number is incremented each time you create a new version of the site and insert it into Freenet.
+
 
 
 Updateable Subspace Keys (USKs):
@@ -84,7 +88,7 @@ For both types of USKs, the address in the browser address bar will be changed t
 
 Here's an example of an address of a real USK site in Freenet:
 
-localhost:8888/freenet:USK@AdBE0xOQQMktD0mFZ0pY5mloVUxe-jlMx0aZQqc7jtY,KzlYqqEPd9VQ6n8qXFxIUUKzB5v2WEXo4bG7V5nSR6Q,AQACAAE/FreeBook/13
+http://localhost:8888/freenet:USK@AdBE0xOQQMktD0mFZ0pY5mloVUxe-jlMx0aZQqc7jtY,KzlYqqEPd9VQ6n8qXFxIUUKzB5v2WEXo4bG7V5nSR6Q,AQACAAE/FreeBook/13
 
 •	AdBE0xOQQMktD0mFZ0pY5mloVUxe-jlMx0aZQqc7jtY, is the hash of the public key
 
