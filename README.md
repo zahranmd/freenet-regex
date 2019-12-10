@@ -52,7 +52,7 @@ In the example, the above mentioned parts of CHK are:
 
 •	AAIC—8, crypto settings
 
-•	Arrow of time %28draft%29%28230s%29.pdf, file name 
+•	Arrowoftime%28draft%29%28230s%29.pdf, file name 
 
 
 
