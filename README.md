@@ -138,4 +138,4 @@ Authors:
 
 Zahra Niroumand <a href="https://github.com/zahranmd">@zahranmd</a>
 
-Morita Tarverdians (@mtarverdians)
+Morita Tarverdians <a href="https://github.com/mtarverdians">@mtarverdians</a>
