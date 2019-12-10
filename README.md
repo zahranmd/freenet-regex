@@ -107,7 +107,7 @@ http://localhost:8888/freenet:USK@AdBE0xOQQMktD0mFZ0pY5mloVUxe-jlMx0aZQqc7jtY,Kz
 
 •	pip3 (or just pip for python 2.7)
 
-<b>Installing:</b>
+<b>Install packages with pip:</b>
 
 •	pip install bs4
 
@@ -118,6 +118,16 @@ http://localhost:8888/freenet:USK@AdBE0xOQQMktD0mFZ0pY5mloVUxe-jlMx0aZQqc7jtY,Kz
 
 Note: If these commands do not work, try them with pip3.
 
+<b>Install from source:</b>
+
+ Clone the project: 
+ 
+ https://github.com/zahranmd/freenet-regex.git
+ 
+ cd freenet-regex
+ 
+ pip install –r requirements.txt
+ 
 
 <b>How to use:</b>
 
