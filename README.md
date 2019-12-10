@@ -2,19 +2,19 @@
 extract and recognize Freenet sites (Freesites)
 
 
-Introduction to Freenet and Freesites:
+<b>Introduction to Freenet and Freesites:</b>
 
 Freenet is free software which lets you anonymously share files, browse and publish "Freesites" (web sites accessible only through Freenet) and chat on forums, without fear of censorship. Freenet is decentralized to make it less vulnerable to attack.
 
-Freesites:
+<b>Freesites:</b>
 
 Browsing user's Freesites are a popular way of using Freenet. Freesites are static websites that reside inside the Freenet network, and are only accessible through the Freenet network. 
 
-Freenet keys:
+<b>Freenet keys:</b>
 
 Each file that exists on Freenet has a key associated with it. Freenet has various types of keys. Keys are used for everything on Freenet, and are a kind of URI.
 
-Accessing data:
+<b>Accessing data:</b>
 
 To access a particular piece of data on Freenet, you need to know the key to the data, and enter it like this (or click a link containing the key):
 http://localhost:8888/[FreenetKey]    /    http://127.0.0.1:8888/[FreenetKey]
@@ -28,7 +28,7 @@ These are three mostly used keys in Freenet:
 •	USK - Updatable Subspace Keys
 
 
-Content Hash Keys (CHK):
+<b>Content Hash Keys (CHK):</b>
 
 Content Hash Keys(CHKs) are for files with static content, like an .mp3 or a PDF-document. These keys are hashes of the content of the file. A hash is a reproducible method of turning a specific piece of data into a relatively small number that serve as a sort of fingerprint for the data. If the file content changes, even ever so little, the hash of the file changes radically. A CHK uniquely identifies a file, it should not be possible for two files with different content to have the same CHK. The CHK consists of three parts:
 
@@ -42,7 +42,7 @@ So, a typical CHK key looks like this:
 	CHK @ file hash, decryption key, crypto settings
 For example:
 
-http://localhost:8888/freenet:CHK@MBkDVZUDgjVN4Hrjtj8u2~KBtAXGzJGte99CRhA-TZU,q4dp0VskEeY9lC1OHJTq-~TDX32q37oOX8BpvDMWrdQ,AAIC--8/Zeh.Arrow of time%28draft%29%28230s%29.pdf
+http://localhost:8888/freenet:CHK@MBkDVZUDgjVN4Hrjtj8u2~KBtAXGzJGte99CRhA-TZU,q4dp0VskEeY9lC1OHJTq-~TDX32q37oOX8BpvDMWrdQ,AAIC--8/Zeh.Arrowoftime%28draft%29%28230s%29.pdf
 
 In the example, the above mentioned parts of CHK are: 
 
@@ -56,7 +56,7 @@ In the example, the above mentioned parts of CHK are:
 
 
 
-Signed Subspace Keys (SSKs):
+<b>Signed Subspace Keys (SSKs):</b>
 
 Signed Subspace Keys (SSKs) are usually for sites that are going to change over time. For example, a website that may need news to be updated or information to be corrected, added or deleted. They work in such a way that someone else can't put up a newer version of your site and pretend it was you who did it. It works by using public-key cryptography so you automatically sign your site. Only the person with the secret key can add updated versions of your site to Freenet.
 
@@ -74,7 +74,7 @@ http://localhost:8888/freenet:SSK@spOnEa2YvAoNfreZPfoy0tVNCzQghLdWaaNM10GEiEM,QR
 
 
 
-Updateable Subspace Keys (USKs):
+<b>Updateable Subspace Keys (USKs):</b>
 
 Updateable Subspace Keys (USKs) are useful for linking to the latest version of a Signed Subspace Key site. Note that USKs are really just a user-friendly wrapper around SSKs, which hide the process of searching for more recent versions of a site. There are two types of USK addresses:
 
@@ -101,13 +101,13 @@ http://localhost:8888/freenet:USK@AdBE0xOQQMktD0mFZ0pY5mloVUxe-jlMx0aZQqc7jtY,Kz
 •	13, version of site
 
 
-Prerequisites:
+<b>Prerequisites:</b>
 
 •	Python 
 
 •	pip3 (or just pip for python 2.7)
 
-Installing: 
+<b>Installing:</b>
 
 •	pip install bs4
 
@@ -119,7 +119,7 @@ Installing:
 Note: If these commands do not work, try them with pip3.
 
 
-How to use:
+<b>How to use:</b>
 
 In this project, we have find_freenet_regex.py file in which we define different cases for detecting and extracting freesite’s links. It is possible to detect and extract a freesite from text and html file. Also, you can test an URL to see if it is a valid freesite or not.
 For this, you should call the related function (extract_from_text/ extract_from_html / check) which is defined in find_freenet_regex.py. 
@@ -130,11 +130,11 @@ For better understanding, there is a test.py file, in which you can see some exa
 
 Also, you can determine the key type by free_ins. For example, ‘free_ins = freenet("USK")’ means that you are interested to extract just ‘USK’ addresses from the given text file. As mentioned above, this parameter can be ALL, USK, SSK and CHK. 
 
-Contributing:
+<b>Contributing:</b>
 
 If you are missing a feature or have a new idea, go for it! That is what open-source is for!
 
-Authors:
+<b>Authors:</b>
 
 Zahra Niroumand <a href="https://github.com/zahranmd">@zahranmd</a>
 
